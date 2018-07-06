@@ -15,3 +15,6 @@ test:
 clean:
 	@echo 'Cleaning up files.'
 	rm -rf build/
+install:
+	@if [ ! -d "/var/log/dosmon" ]; then mkdir /var/log/dosmon; fi
+	cp ./build/dosmon /sbin/dosmon
