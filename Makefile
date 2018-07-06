@@ -17,4 +17,6 @@ clean:
 	rm -rf build/
 install:
 	@if [ ! -d "/var/log/dosmon" ]; then mkdir /var/log/dosmon; fi
+	@if [ ! -d "/etc/dosmon" ]; then mkdir /etc/dosmon; fi
 	cp ./build/dosmon /sbin/dosmon
+	cp ./config.json /etc/dosmon/config.json
