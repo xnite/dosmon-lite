@@ -1,0 +1,16 @@
+{
+    "device":"eth0",
+    "log_directory":"/var/log/dosmon",
+    "thresholds":{
+        "bandwidth":{
+            "in":75,
+            "out":75,
+            "total":100
+        },
+        "packets":{
+            "in":15000,
+            "out":15000,
+            "total":25000
+        }
+    }
+}
